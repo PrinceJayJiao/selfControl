@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddItemActivity">
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:text="活动"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/textView1"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="36dp"
+        android:text="收益"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="240dp"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="18dp"
+        android:layout_toEndOf="@id/textView1" />
+
+    <EditText
+        android:id="@+id/gain"
+        android:layout_width="240dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/name"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="19dp"
+        android:layout_toEndOf="@id/textView2"
+        android:hint="减益事件，此项置空"
+
+        />
+
+    <EditText
+        android:id="@+id/loss"
+        android:layout_width="240dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/gain"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="17dp"
+        android:layout_toEndOf="@id/textView3"
+        android:hint="增益事件，此项置空" />
+
+    <EditText
+        android:id="@+id/time"
+        android:layout_width="240dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/loss"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="14dp"
+        android:layout_toEndOf="@id/textView4" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/textView2"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="28dp"
+        android:text="减益"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/textView3"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="33dp"
+        android:text="时长"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="保存" />
+</RelativeLayout>
